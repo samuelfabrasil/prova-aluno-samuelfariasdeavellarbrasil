@@ -1,0 +1,30 @@
+{
+  "name": "prova-aluno-samuelfariasdeavellarbrasil",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "knex migrate:latest --knexfile db/knexfile.js",
+    "seed": "knex seed:run --knexfile db/knexfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelfabrasil/prova-aluno-samuelfariasdeavellarbrasil.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelfabrasil/prova-aluno-samuelfariasdeavellarbrasil/issues"
+  },
+  "homepage": "https://github.com/samuelfabrasil/prova-aluno-samuelfariasdeavellarbrasil#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.1",
+    "knex": "^0.95.14",
+    "nodemon": "^2.0.15",
+    "sqlite3": "^5.0.2"
+  }
+}
