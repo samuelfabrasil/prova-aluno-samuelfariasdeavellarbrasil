@@ -1,7 +1,4 @@
-Prova 06
-Aluno Samuel Farias de Avellar Brasil
--------------------------------------------
-Como usar a API(CRUD):
+<h1>Como usar a API(CRUD):</h1>
 
 Ler uma tabela
 Entrei no postman e adicione no campo da url o seguinte caminho
