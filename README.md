@@ -27,7 +27,7 @@ http://localhost:3300/nome_da_tabela
 
 <p>Exemplo</p>
 
-<strong>URL</strong>http://localhost:3300/nome_da_tabela
+<strong>URL</strong>http://localhost:3300/nome_da_tabela<br/>
 <strong>Body</strong>
 ```
 {
