@@ -4,5 +4,5 @@ Aluno Samuel Farias de Avellar Brasil
 Como usar a API(CRUD):
 
 Criar um registro:
-Entrei no postman e adicione no campo da url o seguinte caminho:
+Entrei no postman e adicione no campo da url o seguinte caminho:<b></b>
 <a>http://localhost:3300/clientes</a>
