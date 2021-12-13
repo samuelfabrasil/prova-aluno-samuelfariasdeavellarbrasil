@@ -18,9 +18,12 @@ http://localhost:3300/nome_da_tabela
 
 <h2>Iniciar a API</h2>
 <p>Abra o repositorio no vscode e na pasta root do projeto rode o seguinte comando no terminal</p>
+
 ```
 npm start
+
 ```
+
 <h2>Ler uma tabela</h2>
 <p>Selecione o método GET no postman e use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela
