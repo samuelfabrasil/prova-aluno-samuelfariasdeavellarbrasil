@@ -17,13 +17,5 @@ http://localhost:3300/nome_da_tabela
 <ṕ>Selecione o método GET no postman e use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela
 
-<h2>Ler um registro</h2>
-<ṕ>Selecione o método GET no postman e use a seguinte URL</p>
-http://localhost:3300/nome_da_tabela/id_do_registro
-
-<h2>Adicionar um registro</h2>
-<ṕ>Selecione o método POST no postman, use a seguinte URL e coloque no corpo da requisição um JSON com os campos do registro</p>
-http://localhost:3300/nome_da_tabela
-
 
 
