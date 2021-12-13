@@ -30,7 +30,7 @@ http://localhost:3300/nome_da_tabela
 http://localhost:3300/nome_da_tabela/id_do_registro
 
 <h2>Atualizando um registro</h2>
-<ṕ>Selecione o método DELETE no postman, use a seguinte URL/p>
+<ṕ>Selecione o método DELETE no postman, use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela/id_do_registro
 
 
