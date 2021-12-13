@@ -25,6 +25,16 @@ http://localhost:3300/nome_da_tabela/id_do_registro
 <p>Selecione o método POST no postman, use a seguinte URL e coloque no corpo da requisição um JSON com os campos do registro</p>
 http://localhost:3300/nome_da_tabela
 
+<p>Exemplo</p>
+
+<strong>URL</strong>http://localhost:3300/nome_da_tabela
+<strong>Body</strong>
+```
+{
+    "nome": "Ana Maria"
+}
+```
+
 <h2>Atualizando um registro</h2>
 <p>Selecione o método PUT no postman, use a seguinte URL, coloque no corpo da requisição um JSON com os campos do registro com os valores atuais e altere o valor dos campos que desejar
 </p>
