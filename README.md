@@ -17,9 +17,10 @@ http://localhost:3300/nome_da_tabela
 <br/>[Esse tutorial requere o programa postman que pode ser adquirido por esse link](https://www.postman.com/downloads/)
 
 <h2>Iniciar a API</h2>
-<p>Abra o repositorio no vscode e na pasta root do projeto rode o seguinte comando no terminal</p>
+<p>Abra o repositorio no vscode e na pasta root do projeto rode os seguintes comandos no terminal</p>
 
 ```
+npm i express body-parser knex nodemon sqlite3
 npm start
 
 ```
