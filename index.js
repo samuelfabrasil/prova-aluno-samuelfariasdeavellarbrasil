@@ -16,19 +16,19 @@ cliente.selectById(1)
 cliente.insert(5,'Samuel')
 cliente.update(5,'Samuel Farias')
 cliente.remove(5)
-/*
+
 pedido.select()
 pedido.selectById(1)
-pedido.insert('10/10/1007',1)
+pedido.insert(3,'10/10/1007',1)
 pedido.update(3,'10/10/1008',1)
 pedido.remove(3)
 
 produto.select()
 produto.selectById(1)
-produto.insert('Leite',10.0)
+produto.insert(5,'Leite',10.0)
 produto.update(5,'Leite de soja',15.0)
 produto.remove(5)
-*/
+
 app.use(bp.json())
 app.use(bp.urlencoded({ extended: true }))
 
