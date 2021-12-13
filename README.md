@@ -7,7 +7,7 @@ Ler uma tabela
 Entrei no postman e adicione no campo da url o seguinte caminho
 <a>http://localhost:3300/nome_da_tabela</a>
 
-<table>
+<table borde=1px>
 <ul>
 <li>TB_CLIENTE</li>
 </ul>
