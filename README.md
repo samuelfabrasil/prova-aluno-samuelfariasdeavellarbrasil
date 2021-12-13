@@ -13,6 +13,7 @@ http://localhost:3300/nome_da_tabela
 | TB_PRODUTO | produtos  |
 | TB_PEDIDO_PRODUTO | pedidos_produtos |
 
+<br/>[Os códigos que realizam as operações estão no endereço nesse link](https://github.com/samuelfabrasil/prova-aluno-samuelfariasdeavellarbrasil/tree/master/controllers)
 <h2>Ler uma tabela</h2>
 <p>Selecione o método GET no postman e use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela
