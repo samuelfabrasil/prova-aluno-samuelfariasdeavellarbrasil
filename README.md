@@ -17,18 +17,26 @@ http://localhost:3300/nome_da_tabela
 <p>Selecione o método GET no postman e use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela
 
+<br/><p>Exemplo</p>
+
+<strong>URL</strong>http://localhost:3300/clientes<br/>
+
 <h2>Ler um registro</h2>
 <p>Selecione o método GET no postman e use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela/id_do_registro
+
+<br/><p>Exemplo</p>
+
+<strong>URL</strong>http://localhost:3300/clientes/1<br/>
 
 <h2>Adicionar um registro</h2>
 <p>Selecione o método POST no postman, use a seguinte URL e coloque no corpo da requisição um JSON com os campos do registro</p>
 http://localhost:3300/nome_da_tabela
 
-<p>Exemplo</p>
+<br/><p>Exemplo</p>
 
-<strong>URL</strong>http://localhost:3300/nome_da_tabela<br/>
-<strong>Body</strong>
+<strong>URL</strong>http://localhost:3300/clientes<br/>
+<strong>Body:</strong>
 ```
 {
     "nome": "Ana Maria"
@@ -40,8 +48,21 @@ http://localhost:3300/nome_da_tabela
 </p>
 http://localhost:3300/nome_da_tabela/id_do_registro
 
+<br/><p>Exemplo</p>
+
+<strong>URL</strong>http://localhost:3300/clientes/5<br/>
+<strong>Body:</strong>
+```
+{
+    "nome": "Ana Maria de Alencar"
+}
+```
+
 <h2>Atualizando um registro</h2>
 <p>Selecione o método DELETE no postman, use a seguinte URL</p>
 http://localhost:3300/nome_da_tabela/id_do_registro
 
+<br/><p>Exemplo</p>
+
+<strong>URL</strong>http://localhost:3300/clientes/5<br/>
 
