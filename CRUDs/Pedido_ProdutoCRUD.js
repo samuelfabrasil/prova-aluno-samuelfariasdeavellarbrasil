@@ -16,7 +16,7 @@ function select() {
       pedido_id: "pedido_id",
       produto_id: "produto_id",
       quantidade: "quantidade",
-      quantidadexpreco: "quantidadexpreco",
+      quantidadexpreco: "quantidade_X_preco_produto",
     })
     .then((cliente) => {
       return console.log(cliente);
@@ -33,7 +33,7 @@ function selectById(id) {
       pedido_id: "pedido_id",
       produto_id: "produto_id",
       quantidade: "quantidade",
-      quantidadexpreco: "quantidadexpreco",
+      quantidadexpreco: "quantidade_X_preco_produto",
     })
     .where({ id })
     .then((cliente) => {
@@ -43,14 +43,14 @@ function selectById(id) {
       console.error(err);
     });
 }
-function insert(id,pedido_id,produto_id,quantidade,quantidadexpreco) {
+function insert(id,pedido_id,produto_id,quantidade,quantidade_X_preco_produto) {
   knex("TB_PEDIDO_PRODUTO")
-    .insert({ id,pedido_id,produto_id,quantidade,quantidadexpreco })
+    .insert({ id,pedido_id,produto_id,quantidade,quantidade_X_preco_produto })
     .catch((err) => {
       console.error(err);
     });
 }
-function update(id, pedido_id,produto_id,quantidade,quantidadexpreco) {
+function update(id, pedido_id,produto_id,quantidade,quantidade_X_preco_produto) {
   knex("TB_PEDIDO_PRODUTO")
     .where({ id })
     .update({
@@ -58,7 +58,7 @@ function update(id, pedido_id,produto_id,quantidade,quantidadexpreco) {
         pedido_id: pedido_id,
         produto_id: produto_id,
         quantidade: quantidade,
-        quantidadexpreco: quantidadexpreco
+        quantidade_X_preco_produto: quantidade_X_preco_produto
     })
     .catch((err) => {
       console.error(err);
