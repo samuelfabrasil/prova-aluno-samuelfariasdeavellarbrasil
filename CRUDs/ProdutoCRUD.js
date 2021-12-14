@@ -19,6 +19,9 @@ function select(){
       .then((produto) => {
         return console.log(produto);
       })
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function selectById(id){
     knex("TB_PRODUTO")
@@ -31,10 +34,16 @@ function selectById(id){
       .then((produto) => {
         return console.log(produto[0]);
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }
 function insert(id,descricao,preco){
     knex("TB_PRODUTO")
       .insert({ id,descricao, preco})
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function update(id,descricao,preco){
     knex("TB_PRODUTO")
@@ -43,6 +52,9 @@ function update(id,descricao,preco){
         descricao: descricao,
         preco : preco
       })
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function remove(id){
     knex("TB_PRODUTO")
@@ -54,4 +66,7 @@ function remove(id){
           message: "OK",
         });
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }

@@ -9,7 +9,7 @@ module.exports = {
     remove,
 }
 
-function select(){
+ function select(){
     knex("TB_CLIENTE")
       .select({
         id: "id",    
@@ -18,8 +18,11 @@ function select(){
       .then((cliente) => {
         return console.log(cliente);
       })
+      .catch((err) => {
+        console.error(err);
+      });
 }
-function selectById(id){
+ function selectById(id){
     knex("TB_CLIENTE")
       .select({
         id: "id",
@@ -29,19 +32,29 @@ function selectById(id){
       .then((cliente) => {
         return console.log(cliente[0]);
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }
-function insert(id,nome){
+ function insert(id,nome){
     knex("TB_CLIENTE")
       .insert({ id,nome})
+      .catch((err) => {
+        console.error(err);
+      });
 }
-function update(id,nome){
+ function update(id,nome){
     knex("TB_CLIENTE")
       .where({ id })
       .update({
         nome : nome
       })
+      .catch((err) => {
+        console.error(err);
+      });
+      
 }
-function remove(id){
+ function remove(id){
     knex("TB_CLIENTE")
       .where({ id })
       .del()
@@ -51,4 +64,7 @@ function remove(id){
           message: "OK",
         });
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }

@@ -19,6 +19,9 @@ function select(){
       .then((pedido) => {
         return console.log(pedido);
       })
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function selectById(id){
     knex("TB_PEDIDO")
@@ -31,10 +34,16 @@ function selectById(id){
       .then((pedido) => {
         return console.log(pedido[0]);
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }
 function insert(id,data_pedido,cliente_id){
     knex("TB_PEDIDO")
       .insert({ id,data_pedido, cliente_id})
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function update(id,data_pedido,cliente_id){
     knex("TB_PEDIDO")
@@ -43,6 +52,9 @@ function update(id,data_pedido,cliente_id){
         data_pedido: data_pedido,
         cliente_id : cliente_id
       })
+      .catch((err) => {
+        console.error(err);
+      });
 }
 function remove(id){
     knex("TB_PEDIDO")
@@ -54,4 +66,7 @@ function remove(id){
           message: "OK",
         });
     })
+    .catch((err) => {
+      console.error(err);
+    });
 }
