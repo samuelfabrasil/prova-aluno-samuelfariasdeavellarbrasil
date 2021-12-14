@@ -33,34 +33,12 @@ function selectById(id){
 function insert(id,nome){
     knex("TB_CLIENTE")
       .insert({ id,nome})
-      .then((id) => {
-        knex("TB_CLIENTE")
-          .select({
-            id: "id",
-            nome:"nome"
-          })
-          .where({ id })
-          .then((cliente) => {
-            return console(cliente[0]);
-          });
-    })
 }
 function update(id,nome){
     knex("TB_CLIENTE")
       .where({ id })
       .update({
         nome : nome
-      })
-      .then(() => {
-        knex("TB_CLIENTE")
-          .select({
-            id: "id",
-            nome:"nome"
-          })
-          .where({ id })
-          .then((cliente) => {
-            return console.log(cliente[0]);
-          });
       })
 }
 function remove(id){

@@ -38,21 +38,7 @@ function selectById(id) {
 }
 function insert(id,pedido_id,produto_id,quantidade,quantidadexpreco) {
   knex("TB_PEDIDO_PRODUTO")
-    .insert({ id,pedido_id,produto_id,quantidade,quantidadexpreco })
-    .then((id) => {
-      knex("TB_PEDIDO_PRODUTO")
-        .select({
-          id: "id",
-          pedido_id: "pedido_id",
-          produto_id: "produto_id",
-          quantidade: "quantidade",
-          quantidadexpreco: "quantidadexpreco",
-        })
-        .where({ id })
-        .then((cliente) => {
-          return console(cliente[0]);
-        });
-    });
+    .insert({ id,pedido_id,produto_id,quantidade,quantidadexpreco });
 }
 function update(id, pedido_id,produto_id,quantidade,quantidadexpreco) {
   knex("TB_PEDIDO_PRODUTO")
@@ -64,20 +50,6 @@ function update(id, pedido_id,produto_id,quantidade,quantidadexpreco) {
         quantidade: quantidade,
         quantidadexpreco: quantidadexpreco
     })
-    .then(() => {
-      knex("TB_PEDIDO_PRODUTO")
-        .select({
-            id: "id",
-            pedido_id: "pedido_id",
-            produto_id: "produto_id",
-            quantidade: "quantidade",
-            quantidadexpreco: "quantidadexpreco"
-        })
-        .where({ id })
-        .then((cliente) => {
-          return console.log(cliente[0]);
-        });
-    });
 }
 function remove(id) {
   knex("TB_PEDIDO_PRODUTO")

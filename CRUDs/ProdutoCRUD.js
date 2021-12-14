@@ -35,18 +35,6 @@ function selectById(id){
 function insert(id,descricao,preco){
     knex("TB_PRODUTO")
       .insert({ id,descricao, preco})
-      .then((id) => {
-        knex("TB_PRODUTO")
-          .select({
-            id: "id",
-            descricao: "descricao",
-            preco : "preco"
-          })
-          .where({ id })
-          .then((cliente) => {
-            return console(cliente[0]);
-          });
-    })
 }
 function update(id,descricao,preco){
     knex("TB_PRODUTO")
@@ -54,18 +42,6 @@ function update(id,descricao,preco){
       .update({
         descricao: descricao,
         preco : preco
-      })
-      .then(() => {
-        knex("TB_PRODUTO")
-          .select({
-            id: "id",
-            descricao: "descricao",
-            preco : "preco"
-          })
-          .where({ id })
-          .then((produto) => {
-            return console.log(produto[0]);
-          });
       })
 }
 function remove(id){

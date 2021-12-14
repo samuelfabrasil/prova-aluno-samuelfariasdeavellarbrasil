@@ -35,18 +35,6 @@ function selectById(id){
 function insert(id,data_pedido,cliente_id){
     knex("TB_PEDIDO")
       .insert({ id,data_pedido, cliente_id})
-      .then((id) => {
-        knex("TB_PEDIDO")
-          .select({
-            id: "id",
-            data_pedido: "data_pedido",
-            cliente_id : "cliente_id"
-          })
-          .where({ id })
-          .then((cliente) => {
-            return console(cliente[0]);
-          });
-    })
 }
 function update(id,data_pedido,cliente_id){
     knex("TB_PEDIDO")
@@ -54,18 +42,6 @@ function update(id,data_pedido,cliente_id){
       .update({
         data_pedido: data_pedido,
         cliente_id : cliente_id
-      })
-      .then(() => {
-        knex("TB_PEDIDO")
-          .select({
-            id: "id",
-            data_pedido: "data_pedido",
-            cliente_id : "cliente_id"
-          })
-          .where({ id })
-          .then((pedido) => {
-            return console.log(pedido[0]);
-          });
       })
 }
 function remove(id){
